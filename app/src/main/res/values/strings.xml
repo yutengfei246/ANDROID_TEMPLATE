@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Innova Academy</string>
+    <string name="profile">profile</string>
+    <string name="my_lessions">my lessions</string>
+    <string name="history">history</string>
+    <string name="my_video">my video</string>
+    <string name="my_vedio">my vedio</string>
+    <string name="navigation_manager">personal information</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="name">name</string>
+    <string name="price">price</string>
+    <string name="discount">discount</string>
+    <string name="discript">discript</string>
+</resources>

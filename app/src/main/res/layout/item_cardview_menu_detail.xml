@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    android:id="@+id/cardview_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dp_15"
+    android:layout_marginTop="@dimen/dp_5"
+    android:layout_marginRight="@dimen/dp_15"
+    android:layout_marginBottom="@dimen/dp_5"
+    card_view:cardCornerRadius="@dimen/dp_5"
+    card_view:cardElevation="@dimen/dp_3"
+    card_view:contentPadding="@dimen/dp_5"
+    android:clickable="true"
+    xmlns:app="http://schemas.android.com/tools">
+
+    <android.support.design.widget.CoordinatorLayout android:id="@+id/item_coordinator_left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <ImageView android:id="@+id/item_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <ImageView android:id="@+id/item_image"
+            app:layout_anchor="@id/item_background"
+            app:layout_anchorGravity="right"
+            android:layout_width="@dimen/dp_100"
+            android:layout_height="@dimen/dp_100"
+            android:layout_margin="@dimen/dp_16" />
+
+
+        <LinearLayout android:id="@+id/info"
+            android:layout_marginTop="@dimen/dp_100"
+            app:layout_anchor="@id/item_background"
+            app:layout_anchorGravity="right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText android:id="@+id/item_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/dp_16"
+                android:hint="@string/name"
+                android:focusable="false"/>
+
+            <EditText android:id="@+id/item_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/dp_16"
+                android:hint="@string/price"
+                android:focusable="false"/>
+
+            <EditText android:id="@+id/item_off"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/dp_16"
+                android:hint="@string/discount"
+                android:focusable="false"/>
+
+
+            <EditText android:id="@+id/item_describe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/dp_16"
+                android:hint="@string/discript"
+                android:focusable="false"/>
+
+        </LinearLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_anchor="@id/item_image"
+            app:layout_anchorGravity="right"
+            android:src="@android:drawable/ic_menu_camera"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_anchor="@id/info"
+            app:layout_anchorGravity="bottom|right"
+            android:src="@drawable/ic_star_black_24dp" />
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</android.support.v7.widget.CardView>
